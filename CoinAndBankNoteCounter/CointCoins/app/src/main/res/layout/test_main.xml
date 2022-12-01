@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/num"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <CheckBox
+        android:id="@+id/cbCheckCoins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you have coins?"
+        android:textSize="18sp"
+        android:padding="7dp"/>
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:padding="20dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- child view -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- LinearLayout children -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Amount of 0.01€">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
