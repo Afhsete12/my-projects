@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1064659990165",
+    "project_id": "vlaka-992ab",
+    "storage_bucket": "vlaka-992ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064659990165:android:f13caec1cb4e0881aa4d9c",
+        "android_client_info": {
+          "package_name": "com.example.vlaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064659990165-4jfhe6n0apo67i4iea6te2n31osuvrgl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vlaka",
+            "certificate_hash": "bd0b3c6365d052b0ac056f37313d5f96c3795793"
+          }
+        },
+        {
+          "client_id": "1064659990165-rq0l7isjfkf8usbuttcade7tnntpvgdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vlaka",
+            "certificate_hash": "7df5ce266a9e323aeba4485b3bc7677cef0d82a7"
+          }
+        },
+        {
+          "client_id": "1064659990165-vci6gars1bokg4vg4309in1stpacp2fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbIZcsK1cZj_lqkKQBIH04Un5tvBgkmhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064659990165-vci6gars1bokg4vg4309in1stpacp2fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

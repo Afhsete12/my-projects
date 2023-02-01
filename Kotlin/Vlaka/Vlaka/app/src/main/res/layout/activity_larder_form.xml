@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LarderFormActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#17454c" />
+
+    <LinearLayout
+        android:background="@drawable/style_rw"
+        android:id="@+id/LinLayoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inknut_regular"
+            android:text="Larder Form"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="80dp"
+            android:background="#5B8DF5F3"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_image_24"
+            app:iconSize="20dp" />
+
+        <Button
+            android:id="@+id/selectImage"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#17454c"
+            android:text="Upload Image"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Product Name"
+                app:boxStrokeColor="@color/dark_blue"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/dark_blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:background="@drawable/shape_input"
+                    android:textColor="@color/dark_blue"
+                    android:textCursorDrawable="@color/dark_blue" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/incrementStock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_add_circle_24" />
+
+            <TextView
+                android:id="@+id/productStock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/decrementStock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_remove_circle_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Food Type"
+            android:textColor="@color/black"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="6dp"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/testChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="6dp"
+            android:hint="Calories"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/dark_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/shape_input"
+                android:textCursorDrawable="@color/dark_blue"
+                app:boxStrokeWidth="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:boxStrokeWidth="0dp"
+            android:layout_marginBottom="6dp"
+            app:hintTextColor="@color/dark_blue"
+            app:boxStrokeWidthFocused="0dp">
+
+            <EditText
+                android:id="@+id/pDate"
+                android:textCursorDrawable="@color/dark_blue"
+                app:boxStrokeWidth="0dp"
+                android:background="@drawable/shape_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/swMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Do you also want to add the time?" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginHorizontal="20dp"
+            app:boxStrokeWidth="0dp"
+            android:layout_marginBottom="6dp"
+            app:hintTextColor="@color/dark_blue"
+            app:boxStrokeWidthFocused="0dp">
+
+            <EditText
+                android:id="@+id/pTime"
+                android:background="@drawable/shape_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                android:textCursorDrawable="@color/dark_blue"
+                android:hint="Time"
+                android:inputType="datetime" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#17454c"
+                android:text="Save"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifSendInformation"
+        android:visibility="gone"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gif_form" />
+</RelativeLayout>

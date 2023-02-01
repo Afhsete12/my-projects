@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 24% opacity -->
+    <item android:alpha="0.24" android:color="@color/teal_700" android:state_enabled="true" android:state_selected="true"/>
+    <item android:alpha="0.24" android:color="@color/teal_700" android:state_enabled="true" android:state_checked="true"/>
+    <!-- 12% of 87% opacity -->
+    <item android:alpha="0.9" android:color="#17454c" android:state_enabled="true"/>
+    <item android:alpha="0.4" android:color="@color/white"/>
+</selector>
