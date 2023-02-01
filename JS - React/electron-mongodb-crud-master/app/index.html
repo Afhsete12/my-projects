@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron & Mongodb CRUD</title>
+  <link rel="stylesheet" href="ui/app.css">
+</head>
+
+<body>
+  <h1>Electron & Mongo App</h1>
+
+  <form id="taskForm" class="card">
+    <input type="text" id="name" placeholder="Game's Name" autofocus />
+    <input type="text" id="price" placeholder="Game's Price" />
+    <input type="text" id="storage" placeholder="Game's Storage" />
+    <input type="text" id="url" placeholder="Game's Url" />
+    <input type="date" id="date" name="date" value="" />
+    <span style="font-weight: bold ;">OR</span>
+    <input type="text" id="otherDate" placeholder="(Coming Soon,TBA,TBD)" /><br />
+    <label for="controller" style="font-weight: bold">Support Controllers:</label>
+    <select name="controller" id="controller">
+      <option value="No Controller Needed" selected>
+        No Controller Needed
+      </option>
+      <option value="Full Controller Support">Full Controller Support</option>
+      <option value="Partial Controller Support">
+        Partial Controller Support
+      </option>
+    </select>
+    <label for="compatibility" style="font-weight: bold">Game Compatibility:</label>
+    <select name="compatibility" id="compatibility">
+      <option value="Verified" selected>Verified</option>
+      <option value="Playable">Playable</option>
+      <option value="Unsupported">Unsupported</option>
+    </select>
+
+    <fieldset>
+      <legend>Language(SP)</legend>
+      <label><input type="checkbox" id="cbUi" value="" />Is the UI translated?</label><br />
+      <label><input type="checkbox" id="cbTranslated" value="" />Is the Audio translated?</label><br />
+      <label><input type="checkbox" id="cbSubtitles" value="" />Is the Subtitles translated?</label><br />
+    </fieldset>
+    <fieldset>
+      <legend>Platform</legend>
+      <label><input type="checkbox" id="cbCloud" value="" />Is the Game in Xcloud?</label><br />
+      <label><input type="checkbox" id="cbPsn" value="" />Is the Game in PSN</label><br />
+    </fieldset>
+    <fieldset>
+      <legend>Choose your monster's features:</legend>
+      <label><input type="checkbox" id="cbBought" value="" />You have already bought the Game?</label><br />
+    </fieldset>
+    <button type="submit" class="btn btn-secondary">
+      Save
+    </button>
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <script src="ui/app.js"></script>
+</body>
+
+</html>
