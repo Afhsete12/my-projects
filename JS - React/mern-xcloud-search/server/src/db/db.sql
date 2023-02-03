@@ -1,0 +1,6 @@
+CREATE TABLE games (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    expirationDate VARCHAR(255) NOT NULL,
+    startDate VARCHAR(255) NOT NULL
+);
